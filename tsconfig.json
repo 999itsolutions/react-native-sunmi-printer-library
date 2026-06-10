@@ -12,7 +12,8 @@
     "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
+    "ignoreDeprecations": "6.0",
+
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noStrictGenericChecks": false,
@@ -25,5 +26,6 @@
     "target": "esnext",
     "useUnknownInCatchVariables": false,
     "verbatimModuleSyntax": true
-  }
+  },
+  "exclude": ["node_modules", "lib", "example", "**/__tests__/**"]
 }
